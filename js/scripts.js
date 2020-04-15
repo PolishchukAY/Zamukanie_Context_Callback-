@@ -2,16 +2,23 @@ window.onload = function(){
 	
 	var items = document.querySelectorAll('.items .item');
 	
-	for(var i = 0; i < items.length; i++){
-		items[i].onclick = activeItem;
-	}
-		
-	function activeItem(e){
-		console.log(e);
+	function activeItem(){
+		//console.log(e);
 		this.classList.toggle('item-active');
-		console.log(this);
+		//console.log(this);
 	}
-		
+	
+	setInterval(function(){
+		var rand = mtRand(0, items.length-1);
+		console.log(rand);
+		//activeItem;
+	}, 1000);
+	
 }
+
+function mtRand(min, max){
+	return Math.floor(Math.random()*(max-min+1));
+}
+
 
 
