@@ -6,7 +6,8 @@ window.onload = function(){
 		items[i].onclick = activeItem;
 	}
 		
-	function activeItem(){
+	function activeItem(e){
+		console.log(e);
 		this.classList.toggle('item-active');
 		console.log(this);
 	}
