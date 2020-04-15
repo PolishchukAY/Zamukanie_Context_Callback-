@@ -1,23 +1,16 @@
 window.onload = function(){
 	
-	var item = document.querySelector('.items .item');
+	var items = document.querySelectorAll('.items .item');
 	
-	item.onclick = activeItem;
-	
-	/* 
-	item.onclick = function(){
-		this.classList.toggle('item-active');
-	} */ 
-	
+	for(var i = 0; i < items.length; i++){
+		items[i].onclick = activeItem;
+	}
+		
 	function activeItem(){
-	//console.log(this)
-	//this
-	this.classList.toggle('item-active');
-	console.log(item);
-}
-	
-	
-	
+		this.classList.toggle('item-active');
+		console.log(this);
+	}
+		
 }
 
 
