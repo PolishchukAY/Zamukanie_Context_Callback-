@@ -17,6 +17,6 @@ html, body{
 	transition: border-color 0.5s;
 }
 
-.items .item .active{
-	border: 3px solid blue;
+.items .item-active{
+	border: 30px solid blue;
 }

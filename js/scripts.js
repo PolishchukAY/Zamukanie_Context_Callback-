@@ -6,12 +6,11 @@ window.onload = function(){
 	{
 		//alert(1);
 	}
-	
-	activeItem();
+	//activeItem();
 }
 
 function activeItem(){
 	//console.log(this)
-	this
-	
+	//this
+	this.classList.toggle('item-active');
 }
