@@ -8,11 +8,16 @@ window.onload = function(){
 	item.onclick = function(){
 		this.classList.toggle('item-active');
 	} */ 
-}
-
-function activeItem(){
+	
+	function activeItem(){
 	//console.log(this)
 	//this
 	this.classList.toggle('item-active');
 	console.log(item);
 }
+	
+	
+	
+}
+
+
